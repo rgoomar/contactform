@@ -13,6 +13,10 @@
       "1.0.0"
     ],
     [
+      "blaze",
+      "2.0.1"
+    ],
+    [
       "callback-hook",
       "1.0.0"
     ],
@@ -33,6 +37,10 @@
       "1.0.9"
     ],
     [
+      "deps",
+      "1.0.4"
+    ],
+    [
       "ejson",
       "1.0.3"
     ],
@@ -47,6 +55,10 @@
     [
       "geojson-utils",
       "1.0.0"
+    ],
+    [
+      "htmljs",
+      "1.0.1"
     ],
     [
       "id-map",
@@ -82,7 +94,11 @@
     ],
     [
       "mongo",
-      "1.0.5"
+      "1.0.6"
+    ],
+    [
+      "observe-sequence",
+      "1.0.2"
     ],
     [
       "ordered-dict",
@@ -93,12 +109,20 @@
       "1.0.0"
     ],
     [
+      "reactive-var",
+      "1.0.2"
+    ],
+    [
       "retry",
       "1.0.0"
     ],
     [
       "rgoomar:bootstrap-validator",
       "0.5.2"
+    ],
+    [
+      "templating",
+      "1.0.7"
     ],
     [
       "tracker",
