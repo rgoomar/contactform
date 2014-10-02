@@ -12,9 +12,9 @@ Package.onUse(function(api) {
       'jquery',
       'coffeescript',
       'less',
-      'chrismbeckett:fontawesome4',
-      'mizzao:bootstrap-3',
-      'rgoomar:bootstrap-validator'
+      'chrismbeckett:fontawesome4@4.2.1',
+      'mizzao:bootstrap-3@3.2.0_1',
+      'rgoomar:bootstrap-validator@0.5.2'
     ], 'client');
 
     api.use('email', 'server');

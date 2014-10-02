@@ -1,4 +1,4 @@
-Template.contact.rendered = ->
+Template.contactForm.rendered = ->
   document.title = 'Contact'
   $('form').bootstrapValidator
       message: 'This value is not valid'
@@ -25,7 +25,7 @@ Template.contact.rendered = ->
             notEmpty:
               message: 'Message is required'
 
-Template.contact.events
+Template.contactForm.events
   'success.form.bv form': (event, template)->
     $('button[type=submit]').prop 'disabled', true
     event.preventDefault()
@@ -40,8 +40,8 @@ Template.contact.events
       else
         Session.set 'formSubmitted', true
 
-Template.contact.formSubmitted = ->
+Template.contactForm.formSubmitted = ->
   Session.get 'formSubmitted'
 
-Template.contact.formError = ->
+Template.contactForm.formError = ->
   Session.get 'formError'
