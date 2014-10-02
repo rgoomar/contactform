@@ -26,7 +26,7 @@ Package.onUse(function(api) {
     ], 'client');
 
     api.addFiles([
-      'contactForm.coffee',
-      'contactConfig.coffee'
+      'server/contactForm.coffee',
+      'server/contactConfig.coffee'
     ], 'server');
 });
