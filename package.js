@@ -15,7 +15,7 @@ Package.onUse(function(api) {
       'chrismbeckett:fontawesome4',
       'mizzao:bootstrap-3',
       'rgoomar:bootstrap-validator'
-    ] 'client');
+    ], 'client');
 
     api.use('email', 'server');
 
