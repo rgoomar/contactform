@@ -1,0 +1,4 @@
+contactForm =
+  settings:
+    fullName: ''
+    emailTo: ''
