@@ -1,4 +1,0 @@
-contactForm =
-  settings:
-    fullName: ''
-    emailTo: ''

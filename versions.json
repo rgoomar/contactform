@@ -109,6 +109,10 @@
       "1.0.0"
     ],
     [
+      "reactive-dict",
+      "1.0.3"
+    ],
+    [
       "reactive-var",
       "1.0.2"
     ],
@@ -119,6 +123,10 @@
     [
       "rgoomar:bootstrap-validator",
       "0.5.2"
+    ],
+    [
+      "session",
+      "1.0.2"
     ],
     [
       "templating",

@@ -1,7 +1,7 @@
 Package.describe({
   name: 'rgoomar:contactform',
   summary: 'Simple drop-in contact form with validation',
-  version: '0.0.3',
+  version: '0.0.4',
   git: 'https://github.com/rgoomar/contactform'
 });
 
@@ -12,17 +12,19 @@ Package.onUse(function(api) {
       'templating',
       'jquery',
       'coffeescript',
+      'underscore',
       'less',
+      'session',
       'chrismbeckett:fontawesome4@4.2.1',
       'mizzao:bootstrap-3@3.2.0_1',
       'rgoomar:bootstrap-validator@0.5.2'
     ], 'client');
 
-    api.use('email', 'server');
+    api.use(['email'], 'server');
 
     api.addFiles([
-      'server/contactForm.coffee',
-      'server/contactConfig.coffee'
+      'server/contactConfig.js',
+      'server/contactForm.js'
     ], 'server');
 
     api.addFiles([
@@ -30,5 +32,9 @@ Package.onUse(function(api) {
       'client/contact.html',
       'client/contact.coffee'
     ], 'client');
+
+    api.export([
+      'contactFormConfig'
+    ], 'server');
 
 });

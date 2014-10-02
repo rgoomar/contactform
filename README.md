@@ -7,13 +7,14 @@ Add the package with:
 meteor add rgoomar:contactform
 ```
 
-Configure your settings on the ```server```:
+Configure your settings in a file in the ```server/``` folder and your ```MAIL_URL``` environment variable:
 ```
 // Email to send to
 contactForm.settings.emailTo = 'test@gmail.com';
 // Name (optional)
 contactForm.settings.fullName = 'Rishi Goomar';
 ```
+Look at [the email package](http://docs.meteor.com/#email) for more information.
 
 Make an empty template that your router will point to and include this:
 ```
