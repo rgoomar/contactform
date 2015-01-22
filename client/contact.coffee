@@ -30,9 +30,9 @@ Template.contactForm.events
     $('button[type=submit]').prop 'disabled', true
     event.preventDefault()
     data =
-      name: template.find('input[name=name]').value
-      email: template.find('input[name=email]').value
-      message: template.find('textarea[name=message]').value
+      name: $('input[name=fullName]').value
+      email: $('input[name=email]').value
+      message: $('textarea[name=message]').value
     Meteor.call 'sendEmail', data, (err)->
       if err
         Session.set 'formError', true
@@ -40,8 +40,8 @@ Template.contactForm.events
       else
         Session.set 'formSubmitted', true
 
-Template.contactForm.formSubmitted = ->
-  Session.get 'formSubmitted'
-
-Template.contactForm.formError = ->
-  Session.get 'formError'
+Template.contactForm.helpers
+  formSubmitted: ->
+    Session.get 'formSubmitted'
+  formError: ->
+    Session.get 'formError'
