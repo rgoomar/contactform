@@ -20,7 +20,7 @@ contactFormConfig.settings.fullName = 'Rishi Goomar';
 *  message - Message they want to send
 */
 contactFormConfig.settings.customSubject = function(params) {
-  return ‘Message from ‘ + params.name + ‘via contact form’;
+  return 'Message from ' + params.name + 'via contact form';
 }
 ```
 Look at [the email package](http://docs.meteor.com/#email) for more information.
