@@ -1,7 +1,7 @@
 Package.describe({
   name: 'rgoomar:contactform',
   summary: 'Simple drop-in contact form with validation',
-  version: '0.0.8',
+  version: '0.0.9',
   git: 'https://github.com/rgoomar/contactform.git'
 });
 
