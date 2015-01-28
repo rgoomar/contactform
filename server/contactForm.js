@@ -18,7 +18,7 @@ Meteor.startup(function() {
      message = {
        replyTo: params.name + ' <' + params.email + '>',
        to: contactFormConfig.settings.fullName + ' <' + contactFormConfig.settings.emailTo + '>',
-       subject: 'Message from ' + params.name + ' via contact form',
+       subject: contactFormConfig.settings.customSubject(params),
        text: params.message
      };
      // Let's send the email

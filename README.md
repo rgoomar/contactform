@@ -13,6 +13,15 @@ Configure your settings in a file in the ```server/``` folder and your ```MAIL_U
 contactFormConfig.settings.emailTo = 'test@gmail.com';
 // Name (optional)
 contactFormConfig.settings.fullName = 'Rishi Goomar';
+/* Custom Subject
+*  params contains the following:
+*  name - Name of the person wanting to send a message
+*  email - Email of the person
+*  message - Message they want to send
+*/
+contactFormConfig.settings.customSubject = function(params) {
+  return ‘Message from ‘ + params.name + ‘via contact form’;
+}
 ```
 Look at [the email package](http://docs.meteor.com/#email) for more information.
 
@@ -22,8 +31,4 @@ Make an empty template that your router will point to and include this:
 ```
 
 ### Note:
-This is still under development. If you have any suggestions, please make an issue for discussion.
-
-## To Do
-
-- [ ] Custom Subject Messages
+If you have any suggestions, please make an issue for discussion.
